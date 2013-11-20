@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/assets/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -99,8 +99,8 @@ p {
   padding: 15px 20px; }
 
 .cover {
-  background-image: url("/images/issue-1/cover.jpg");
-  background-image: url("/images/issue-1/cover.jpg");
+  background-image: url("/assets/images/issue-1/cover.jpg");
+  background-image: url("/assets/images/issue-1/cover.jpg");
   background-position: center top, center;
   width: 100%;
   height: 900px;
@@ -144,7 +144,7 @@ p {
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
-  background-image: url("/images/issue-1/product-small.png");
+  background-image: url("/assets/images/issue-1/product-small.png");
   background-repeat: no-repeat;
   height: 200px;
   width: 100%; }
@@ -223,8 +223,8 @@ p {
   float: right; }
 
 .full-bleed {
-  background-image: url("/images/issue-1/full-bleed-wallet-glue.jpg");
-  background-image: url("/images/issue-1/full-bleed-wallet-glue.jpg");
+  background-image: url("/assets/images/issue-1/full-bleed-wallet-glue.jpg");
+  background-image: url("/assets/images/issue-1/full-bleed-wallet-glue.jpg");
   background-position: center top, center;
   width: 100%;
   height: 900px;
