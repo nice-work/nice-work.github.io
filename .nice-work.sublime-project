@@ -1,0 +1,9 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/tal/Projects/nice-work",
+      "folder_exclude_patterns": ["assets/css"]
+		}
+	]
+}
