@@ -7,3 +7,21 @@
 @mixin border-radius($amount) {
   @include cross-browser(border-radius, $amount);
 }
+
+@mixin transition($properties) {
+  @include cross-browser(transition, $properties);
+}
+
+@mixin icon($name) {
+  @extend .ss-icon;
+  @extend .#{$name};
+}
+
+@mixin opacity-effect($value: 0.3) {
+  @include transition(opacity .5s ease-in-out);
+  opacity: $value;
+
+  &:hover {
+    opacity: 1;
+  }
+}
