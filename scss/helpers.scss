@@ -1,0 +1,9 @@
+@mixin cross-browser($property, $value) {
+  -moz-#{$property}: $value;
+  -webkit-#{$property}: $value;
+  #{$property}: $value;
+}
+
+@mixin border-radius($amount) {
+  @include cross-browser(border-radius, $amount);
+}

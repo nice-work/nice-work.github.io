@@ -1,0 +1,17 @@
+p {
+  margin-bottom: 1em; }
+
+.body {
+  font-family: georgia, "times new roman";
+  font-size: 17px;
+  line-height: 24px; }
+
+.big-quote {
+  font-family: georgia, "times new roman";
+  font-size: 25px;
+  line-height: 32px; }
+
+.small-quote {
+  font-family: georgia, "times new roman";
+  font-size: 16px;
+  line-height: 16px; }

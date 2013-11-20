@@ -1,0 +1,178 @@
+@import 'bourbon/bourbon';
+
+@import 'reset';
+@import 'colors';
+@import 'helpers';
+@import 'grid';
+@import 'typography';
+@import 'buttons';
+
+//---------------------------------------
+//                COVER
+//---------------------------------------
+.cover {
+//  display: none;
+  @include background-image(url('/images/issue-1/cover.jpg'));
+  background-position: center top, center;
+  width: 100%;
+  height: 900px;
+  position: relative;
+}
+
+.cover-inner {
+  @include cross-browser(text-shadow, 0 1px 2px rgba(0,0,0,0.3));
+  @include san-serif;
+  text-align: center;
+  color: white;
+  width: grid-width(6);
+  position: absolute;
+  top: grid-width(3);
+  left: grid-width(2);
+}
+
+.cover-issue-number {
+  letter-spacing: 1px;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.cover-issue-title {
+  text-transform: uppercase;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+//---------------------------------------
+//             SECTION ONE
+//---------------------------------------
+.section {
+  padding: 120px 0;
+}
+
+.section-one .body {
+  width: grid-width(8);
+  float: left;
+}
+
+.product-info {
+  width: grid-width(4);
+  float: right;
+
+  @include san-serif;
+}
+
+.product-image {
+  @include cross-browser(background-size, cover);
+  background-image: url('/images/issue-1/product-small.png');
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+}
+
+.product-title {
+  @include san-serif;
+  padding: 30px (grid-width(1) / 2) 20px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.product-features {
+  font-size: 14px;
+  line-height: 16px;
+  list-style-type: square;
+  padding: 0 (grid-width(1) / 2);
+
+  li {
+    margin-bottom: 1em;
+  }
+}
+
+.product-purchase {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer {
+  height: 100px;
+}
+
+
+//---------------------------------------
+//             WIDE PHOTO
+//---------------------------------------
+.wide-photo {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.wide-photo img {
+  width: 100%;
+}
+
+.wide-photo-quote {
+  @extend .big-quote;
+  width: grid-width(8);
+  margin: 40px auto;
+  color: #898989;
+}
+
+
+//---------------------------------------
+//             SECTION TWO
+//---------------------------------------
+.section-two .body {
+  width: grid-width(6);
+  float: left;
+}
+
+.section-two .photo {
+  width: grid-width(6);
+  float: right;
+}
+
+.photo-caption {
+  @extend .small-quote;
+  padding: 15px 0;
+  color: #898989;
+  font-style: italic;
+  text-align: center;
+}
+
+
+//---------------------------------------
+//             SECTION THREE
+//---------------------------------------
+.section-three {
+  padding-top: 0;
+}
+
+.section-three .big-quote {
+  color: #898989;
+  padding: 80px grid-width(2);
+  font-style: italic;
+}
+
+.section-three .body {
+  width: grid-width(6);
+  float: right;
+}
+
+.section-three .photo {
+  width: grid-width(6);
+  float: left;
+}
+
+//---------------------------------------
+//             SECTION FOUR
+//---------------------------------------
+.section-four .body {
+  width: grid-width(6);
+  float: left;
+}
+
+.section-four .photo {
+  padding-top: 85px;
+  width: grid-width(6);
+  float: right;
+}

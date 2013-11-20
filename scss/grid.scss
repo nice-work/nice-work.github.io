@@ -1,0 +1,16 @@
+$gw-column: 55px;
+$gw-gutter: 30px;
+
+.section {
+  margin: 0 auto;
+  width: grid-width(12);
+
+  &:after {
+   visibility: hidden;
+   display: block;
+   font-size: 0;
+   content: " ";
+   clear: both;
+   height: 0;
+ }
+}

@@ -1,0 +1,29 @@
+@mixin san-serif {
+  font-family: helvetica, arial;
+}
+
+@mixin serif {
+  font-family: georgia, "times new roman";
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.body {
+  @include serif;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.big-quote {
+  @include serif;
+  font-size: 25px;
+  line-height: 32px;
+}
+
+.small-quote {
+  @include serif;
+  font-size: 16px;
+  line-height: 16px;
+}
