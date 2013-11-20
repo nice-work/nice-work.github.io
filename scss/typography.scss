@@ -6,6 +6,10 @@
   font-family: georgia, "times new roman";
 }
 
+* {
+  @include cross-browser(box-sizing, border-box);
+}
+
 p {
   margin-bottom: 1em;
 }
