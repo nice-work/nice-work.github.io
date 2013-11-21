@@ -18,6 +18,29 @@ p {
   }
 }
 
+h1 {
+  @include san-serif;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+h2 {
+  @include serif;
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 32px;
+  margin-bottom: .5em;
+}
+
+h3 {
+  @include serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 1em;
+}
+
 strong {
   font-weight: bold;
 }
