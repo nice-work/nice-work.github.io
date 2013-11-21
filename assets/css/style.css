@@ -7,7 +7,7 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+small, strike, strong, .menu-bios h2, .menu-bio-name, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -661,6 +661,23 @@ html:hover [class^="ss-"] {
 
 p {
   margin-bottom: 1em; }
+  p:last-child {
+    margin-bottom: 0; }
+
+strong, .menu-bios h2, .menu-bio-name {
+  font-weight: bold; }
+
+em {
+  text-style: italic; }
+
+a,
+a:visited {
+  color: #898989;
+  text-decoration: none; }
+
+a:hover,
+a:active {
+  text-decoration: underline; }
 
 .body {
   font-family: georgia, "times new roman";
@@ -695,6 +712,9 @@ p {
 .button-big {
   font-size: 17px;
   padding: 15px 20px; }
+
+body {
+  font-family: georgia, "times new roman"; }
 
 .cover {
   background-image: url("/assets/images/issue-1/cover.jpg");
@@ -907,3 +927,78 @@ p {
   top: 10px; }
   .video-close-button:hover {
     opacity: 1; }
+
+body {
+  -moz-transition: margin-left 0.5s ease-in-out;
+  -webkit-transition: margin-left 0.5s ease-in-out;
+  transition: margin-left 0.5s ease-in-out;
+  margin-left: 0; }
+  body.show-menu {
+    margin-left: 260px; }
+    body.show-menu .menu-expanded {
+      width: 260px;
+      opacity: 1; }
+    body.show-menu .menu-collapsed {
+      display: none; }
+
+.menu {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0; }
+
+.menu-toggle {
+  cursor: pointer; }
+
+.menu-collapsed {
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0.3;
+  z-index: 101;
+  position: absolute;
+  left: 30px;
+  top: 30px; }
+  .menu-collapsed:hover {
+    opacity: 1; }
+
+.menu-expanded {
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+  opacity: 0;
+  height: 100%;
+  font-size: 12px;
+  line-height: 14px; }
+
+.menu-explainer {
+  margin: 30px 0;
+  padding: 20px 0;
+  border-top: solid 1px #a9a9a9;
+  border-bottom: solid 1px #a9a9a9;
+  text-align: center; }
+
+.menu-items {
+  text-align: center; }
+  .menu-items li {
+    margin-bottom: 2em; }
+
+.menu-bios {
+  text-align: center; }
+
+.menu-bio {
+  margin: 20px 0; }
+
+.menu-bio-name {
+  line-height: 20px; }
+
+.menu-bio-headshot {
+  width: 60px;
+  border: solid 1px #d9d9d9; }

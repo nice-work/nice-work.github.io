@@ -1,6 +1,7 @@
 @import 'bourbon/bourbon';
 
 @import 'reset';
+@import 'z-indexes';
 @import 'fonts';
 @import 'colors';
 @import 'helpers';
@@ -9,10 +10,16 @@
 @import 'buttons';
 
 //---------------------------------------
+//                GLOBAL
+//---------------------------------------
+body {
+  @include serif;
+}
+
+//---------------------------------------
 //                COVER
 //---------------------------------------
 .cover {
-//  display: none;
   @include background-image(url('/assets/images/issue-1/cover.jpg'));
   background-position: center top, center;
   width: 100%;
@@ -278,4 +285,100 @@
   cursor: pointer;
   right: 10px;
   top: 10px;
+}
+
+
+//---------------------------------------
+//                MENU
+//---------------------------------------
+$menu-width: 260px;
+
+body {
+  @include transition(margin-left .5s ease-in-out);
+  margin-left: 0;
+
+  &.show-menu {
+    margin-left: $menu-width;
+
+    .menu-expanded {
+      width: $menu-width;
+      opacity: 1;
+    }
+
+    .menu-collapsed {
+      display: none;
+    }
+  }
+}
+
+.menu {
+  z-index: $z-top;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.menu-toggle {
+  cursor: pointer;
+}
+
+.menu-collapsed {
+  @include opacity-effect;
+  z-index: $z-top + 1;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+
+.menu-expanded {
+  @include transition(opacity .5s ease-in-out);
+  z-index: $z-top;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+  opacity: 0;
+  height: 100%;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.menu-explainer {
+  margin: 30px 0;
+  padding: 20px 0;
+  border-top: solid 1px #a9a9a9;
+  border-bottom: solid 1px #a9a9a9;
+  text-align: center;
+}
+
+.menu-items {
+  text-align: center;
+
+  li {
+    margin-bottom: 2em;
+  }
+}
+
+.menu-bios {
+  text-align: center;
+}
+
+.menu-bios h2 {
+  @extend strong;
+}
+
+.menu-bio {
+  margin: 20px 0;
+}
+
+.menu-bio-name {
+  @extend strong;
+  line-height: 20px;
+}
+
+.menu-bio-headshot {
+  width: 60px;
+  border: solid 1px #d9d9d9;
 }

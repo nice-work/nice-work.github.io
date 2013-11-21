@@ -1,7 +1,7 @@
 /*
 Syntax error: Undefined mixin 'cross-browser'.
-        on line 10 of scss/typography.scss, in `cross-browser'
-        from line 10 of scss/typography.scss
+        on line 10 of assets/scss/typography.scss, in `cross-browser'
+        from line 10 of assets/scss/typography.scss
 
 5: @mixin serif {
 6:   font-family: georgia, "times new roman";
@@ -13,11 +13,11 @@ Syntax error: Undefined mixin 'cross-browser'.
 12: 
 13: p {
 14:   margin-bottom: 1em;
-15: }
+15: 
 
 Backtrace:
-scss/typography.scss:10:in `cross-browser'
-scss/typography.scss:10
+assets/scss/typography.scss:10:in `cross-browser'
+assets/scss/typography.scss:10
 /Users/tal/.rvm/gems/ruby-2.0.0-p0@nice-work/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /Users/tal/.rvm/gems/ruby-2.0.0-p0@nice-work/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/tal/.rvm/gems/ruby-2.0.0-p0@nice-work/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -53,11 +53,12 @@ scss/typography.scss:10
 /Users/tal/.rvm/gems/ruby-2.0.0-p0@nice-work/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
 /Users/tal/.rvm/gems/ruby-2.0.0-p0@nice-work/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
 /Users/tal/.rvm/gems/ruby-2.0.0-p0@nice-work/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
-/Users/tal/.rvm/gems/ruby-2.0.0-p0@nice-work/gems/sass-3.2.12/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
-/Users/tal/.rvm/gems/ruby-2.0.0-p0@nice-work/gems/sass-3.2.12/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
-/Users/tal/.rvm/gems/ruby-2.0.0-p0@nice-work/gems/sass-3.2.12/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
+/Users/tal/.rvm/gems/ruby-2.0.0-p0@nice-work/gems/sass-3.2.12/vendor/listen/lib/listen/adapter.rb:198:in `call'
+/Users/tal/.rvm/gems/ruby-2.0.0-p0@nice-work/gems/sass-3.2.12/vendor/listen/lib/listen/adapter.rb:198:in `report_changes'
+/Users/tal/.rvm/gems/ruby-2.0.0-p0@nice-work/gems/sass-3.2.12/vendor/listen/lib/listen/adapter.rb:210:in `poll_changed_dirs'
+/Users/tal/.rvm/gems/ruby-2.0.0-p0@nice-work/gems/sass-3.2.12/vendor/listen/lib/listen/adapters/darwin.rb:38:in `block in start'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'cross-browser'.\A         on line 10 of scss/typography.scss, in `cross-browser'\A         from line 10 of scss/typography.scss\A \A 5: @mixin serif {\A 6:   font-family: georgia, \"times new roman\";\A 7: }\A 8: \A 9: * {\A 10:   @include cross-browser(box-sizing, border-box);\A 11: }\A 12: \A 13: p {\A 14:   margin-bottom: 1em;\A 15: }"; }
+  content: "Syntax error: Undefined mixin 'cross-browser'.\A         on line 10 of assets/scss/typography.scss, in `cross-browser'\A         from line 10 of assets/scss/typography.scss\A \A 5: @mixin serif {\A 6:   font-family: georgia, \"times new roman\";\A 7: }\A 8: \A 9: * {\A 10:   @include cross-browser(box-sizing, border-box);\A 11: }\A 12: \A 13: p {\A 14:   margin-bottom: 1em;\A 15: "; }

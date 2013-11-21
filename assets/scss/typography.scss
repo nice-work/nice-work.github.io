@@ -12,6 +12,29 @@
 
 p {
   margin-bottom: 1em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  text-style: italic;
+}
+
+a,
+a:visited {
+  color: #898989;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
 }
 
 .body {
