@@ -668,7 +668,6 @@ h1 {
   font-family: helvetica, arial;
   text-transform: uppercase;
   font-size: 50px;
-  font-weight: bold;
   line-height: 60px; }
 
 h2 {
@@ -714,11 +713,13 @@ a:active {
   font-size: 16px;
   line-height: 16px; }
 
-.button {
+.button,
+a.button {
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px;
   font-family: georgia, "times new roman";
+  display: inline-block;
   background-color: black;
   color: white;
   font-size: 14px;
@@ -727,8 +728,10 @@ a:active {
   border: none;
   cursor: pointer;
   font-size: 17px;
-  padding: 15px 20px; }
-  .button:hover {
+  padding: 15px 20px;
+  text-decoration: none; }
+  .button:hover,
+  a.button:hover {
     background-color: #222; }
 
 body {
@@ -795,7 +798,7 @@ img.image {
   height: 1px;
   border: 0;
   width: 600px;
-  margin: 65px auto; }
+  margin: 60px auto; }
 
 .section-one .body {
   width: 650px;
