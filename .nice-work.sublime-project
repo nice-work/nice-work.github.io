@@ -3,7 +3,7 @@
 	[
 		{
 			"path": "/Users/tal/Projects/nice-work",
-      "folder_exclude_patterns": ["assets/css"]
+      "folder_exclude_patterns": ["assets/css", "_site"]
 		}
 	]
 }
