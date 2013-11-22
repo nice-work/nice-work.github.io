@@ -827,6 +827,7 @@ img.image {
 
 .product-title {
   font-family: helvetica, arial;
+  text-align: center;
   padding: 30px 27.5px 20px;
   font-size: 20px;
   line-height: 20px;

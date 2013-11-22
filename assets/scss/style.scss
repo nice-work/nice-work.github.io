@@ -120,6 +120,7 @@ img.image {
 
 .product-title {
   @include san-serif;
+  text-align: center;
   padding: 30px (grid-width(1) / 2) 20px;
   font-size: 20px;
   line-height: 20px;
