@@ -1021,6 +1021,10 @@ body {
 .menu-bios {
   text-align: center; }
 
+.menu-bios h2 {
+  font-size: 16px;
+  line-height: 22px; }
+
 .menu-bio {
   margin: 20px 0; }
 
