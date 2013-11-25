@@ -932,7 +932,8 @@ img.image {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
-  display: none; }
+  display: none;
+  z-index: 101; }
   .video-overlay.on {
     display: block; }
 

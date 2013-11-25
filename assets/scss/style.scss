@@ -276,6 +276,7 @@ img.image {
   background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
   display: none;
+  z-index: $z-top + 1;
 
   &.on { display: block; }
 }
