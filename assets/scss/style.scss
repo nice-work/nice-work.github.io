@@ -24,12 +24,13 @@ img.image {
 //                COVER
 //---------------------------------------
 .cover {
+  @include cover;
   @include background-image(url('/assets/images/issue-1/cover.jpg'));
   background-position: center top, center;
   width: 100%;
   height: 900px;
   position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
 }
 
 .cover-inner {
@@ -45,22 +46,23 @@ img.image {
 
 .cover-issue-number {
   letter-spacing: 1px;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
 }
 
 .cover-play-video {
   @include opacity-effect;
   cursor: pointer;
   width: 120px;
-  margin: 0 auto;
+  margin: 15px auto 0;
 }
 
 .cover-play-video-icon {
   @include icon(ss-play);
   height: 75px;
   width: 75px;
-  margin: 15px 0;
+  margin-bottom: 10px;
   display: inline-block;
   font-size: 32px;
   line-height: 80px;
@@ -106,6 +108,10 @@ img.image {
 .product-info {
   width: grid-width(4);
   float: right;
+  color: #333;
+  padding: 5px 5px 20px;
+  border: solid 1px #f8f8f8;
+  background-color: #fcfcfc;
 
   @include san-serif;
 }
@@ -121,21 +127,29 @@ img.image {
 .product-title {
   @include san-serif;
   text-align: center;
-  padding: 30px (grid-width(1) / 2) 20px;
-  font-size: 20px;
-  line-height: 20px;
+  padding: 20px (grid-width(1) / 2) 10px;
+  font-size: 18px;
+  line-height: 18px;
   font-weight: bold;
+
+  > div {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 22px;
+//    font-style: italic;
+    font-weight: 300;
+  }
 }
 
 .product-features {
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 13px;
+  line-height: 14px;
   list-style-type: square;
   padding: 0 (grid-width(1) / 2);
   margin-bottom: 40px;
 
   li {
-    margin-bottom: 1em;
+    margin-bottom: .75em;
   }
 }
 
@@ -358,7 +372,7 @@ body {
 }
 
 .menu-explainer {
-  margin: 30px 0;
+  margin-top: 25px;
   padding: 20px 0;
   border-top: solid 1px #a9a9a9;
   border-bottom: solid 1px #a9a9a9;
@@ -374,13 +388,9 @@ body {
 }
 
 .menu-bios {
+  padding: 25px 0 20px;
   text-align: center;
-}
-
-.menu-bios h2 {
-  @extend strong;
-  font-size: 16px;
-  line-height: 22px;
+  padding: 20px 25px;
 }
 
 .menu-bio {

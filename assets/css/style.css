@@ -7,7 +7,7 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, .menu-bios h2, .menu-bio-name, sub, sup, tt, var,
+small, strike, strong, .menu-bio-name, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -671,11 +671,10 @@ h1 {
   line-height: 60px; }
 
 h2 {
-  font-family: georgia, "times new roman";
-  font-size: 25px;
+  font-size: 22px;
   font-weight: normal;
-  line-height: 32px;
-  margin-bottom: .5em; }
+  line-height: 30px;
+  margin-bottom: .7em; }
 
 h3 {
   font-family: georgia, "times new roman";
@@ -683,7 +682,7 @@ h3 {
   line-height: 30px;
   margin-bottom: 1em; }
 
-strong, .menu-bios h2, .menu-bio-name {
+strong, .menu-bio-name {
   font-weight: bold; }
 
 em {
@@ -700,6 +699,9 @@ a:active {
 
 .body {
   font-family: georgia, "times new roman";
+  -moz-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   font-size: 17px;
   line-height: 24px; }
 
@@ -741,19 +743,20 @@ img.image {
   border: solid 1px #d9d9d9; }
 
 .cover {
+  font-family: helvetica, arial;
   background-image: url("/assets/images/issue-1/cover.jpg");
   background-image: url("/assets/images/issue-1/cover.jpg");
   background-position: center top, center;
   width: 100%;
   height: 900px;
   position: relative;
-  margin-bottom: 120px; }
+  margin-bottom: 100px; }
 
 .cover-inner {
   -moz-text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   -webkit-text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  font-family: helvetica, arial;
+  font-family: "helvetica neue", helvetica, arial;
   text-align: center;
   color: white;
   width: 480px;
@@ -763,8 +766,9 @@ img.image {
 
 .cover-issue-number {
   letter-spacing: 1px;
-  font-size: 22px;
-  line-height: 26px; }
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase; }
 
 .cover-play-video {
   -moz-transition: opacity 0.5s ease-in-out;
@@ -773,14 +777,14 @@ img.image {
   opacity: 0.3;
   cursor: pointer;
   width: 120px;
-  margin: 0 auto; }
+  margin: 15px auto 0; }
   .cover-play-video:hover {
     opacity: 1; }
 
 .cover-play-video-icon {
   height: 75px;
   width: 75px;
-  margin: 15px 0;
+  margin-bottom: 10px;
   display: inline-block;
   font-size: 32px;
   line-height: 80px;
@@ -814,7 +818,11 @@ img.image {
 .product-info {
   width: 310px;
   float: right;
-  font-family: helvetica, arial; }
+  color: #333;
+  padding: 5px 5px 20px;
+  border: solid 1px #f8f8f8;
+  background-color: #fcfcfc;
+  font-family: "helvetica neue", helvetica, arial; }
 
 .product-image {
   -moz-background-size: cover;
@@ -826,21 +834,26 @@ img.image {
   width: 100%; }
 
 .product-title {
-  font-family: helvetica, arial;
+  font-family: "helvetica neue", helvetica, arial;
   text-align: center;
-  padding: 30px 27.5px 20px;
-  font-size: 20px;
-  line-height: 20px;
+  padding: 20px 27.5px 10px;
+  font-size: 18px;
+  line-height: 18px;
   font-weight: bold; }
+  .product-title > div {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 22px;
+    font-weight: 300; }
 
 .product-features {
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 13px;
+  line-height: 14px;
   list-style-type: square;
   padding: 0 27.5px;
   margin-bottom: 40px; }
   .product-features li {
-    margin-bottom: 1em; }
+    margin-bottom: .75em; }
 
 .product-purchase {
   text-align: center; }
@@ -1008,7 +1021,7 @@ body {
   line-height: 14px; }
 
 .menu-explainer {
-  margin: 30px 0;
+  margin-top: 25px;
   padding: 20px 0;
   border-top: solid 1px #a9a9a9;
   border-bottom: solid 1px #a9a9a9;
@@ -1020,11 +1033,9 @@ body {
     margin-bottom: 2em; }
 
 .menu-bios {
-  text-align: center; }
-
-.menu-bios h2 {
-  font-size: 16px;
-  line-height: 22px; }
+  padding: 25px 0 20px;
+  text-align: center;
+  padding: 20px 25px; }
 
 .menu-bio {
   margin: 20px 0; }

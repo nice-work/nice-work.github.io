@@ -1,23 +1,23 @@
 /*
 Syntax error: Undefined mixin 'cross-browser'.
-        on line 10 of assets/scss/typography.scss, in `cross-browser'
-        from line 10 of assets/scss/typography.scss
+        on line 14 of assets/scss/typography.scss, in `cross-browser'
+        from line 14 of assets/scss/typography.scss
 
-5: @mixin serif {
-6:   font-family: georgia, "times new roman";
-7: }
-8: 
-9: * {
-10:   @include cross-browser(box-sizing, border-box);
+9: @mixin cover {
+10:   font-family: helvetica, arial;
 11: }
 12: 
-13: p {
-14:   margin-bottom: 1em;
-15: 
+13: * {
+14:   @include cross-browser(box-sizing, border-box);
+15: }
+16: 
+17: p {
+18:   margin-bottom: 1em;
+19: 
 
 Backtrace:
-assets/scss/typography.scss:10:in `cross-browser'
-assets/scss/typography.scss:10
+assets/scss/typography.scss:14:in `cross-browser'
+assets/scss/typography.scss:14
 /Users/tal/.rvm/gems/ruby-2.0.0-p0@nice-work/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /Users/tal/.rvm/gems/ruby-2.0.0-p0@nice-work/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/tal/.rvm/gems/ruby-2.0.0-p0@nice-work/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -61,4 +61,4 @@ assets/scss/typography.scss:10
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'cross-browser'.\A         on line 10 of assets/scss/typography.scss, in `cross-browser'\A         from line 10 of assets/scss/typography.scss\A \A 5: @mixin serif {\A 6:   font-family: georgia, \"times new roman\";\A 7: }\A 8: \A 9: * {\A 10:   @include cross-browser(box-sizing, border-box);\A 11: }\A 12: \A 13: p {\A 14:   margin-bottom: 1em;\A 15: "; }
+  content: "Syntax error: Undefined mixin 'cross-browser'.\A         on line 14 of assets/scss/typography.scss, in `cross-browser'\A         from line 14 of assets/scss/typography.scss\A \A 9: @mixin cover {\A 10:   font-family: helvetica, arial;\A 11: }\A 12: \A 13: * {\A 14:   @include cross-browser(box-sizing, border-box);\A 15: }\A 16: \A 17: p {\A 18:   margin-bottom: 1em;\A 19: "; }
