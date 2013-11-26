@@ -8,7 +8,7 @@ Syntax error: Undefined mixin 'border-radius'.
 3:   @include border-radius(8px);
 4:   @include serif;
 5:   display: inline-block;
-6:   background-color: black;
+6:   background-color: #222;
 7:   color: white;
 8:   font-size: 14px;
 
@@ -58,4 +58,4 @@ assets/scss/buttons.scss:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'border-radius'.\A         on line 3 of assets/scss/buttons.scss, in `border-radius'\A         from line 3 of assets/scss/buttons.scss\A \A 1: .button,\A 2: a.button {\A 3:   @include border-radius(8px);\A 4:   @include serif;\A 5:   display: inline-block;\A 6:   background-color: black;\A 7:   color: white;\A 8:   font-size: 14px;"; }
+  content: "Syntax error: Undefined mixin 'border-radius'.\A         on line 3 of assets/scss/buttons.scss, in `border-radius'\A         from line 3 of assets/scss/buttons.scss\A \A 1: .button,\A 2: a.button {\A 3:   @include border-radius(8px);\A 4:   @include serif;\A 5:   display: inline-block;\A 6:   background-color: #222;\A 7:   color: white;\A 8:   font-size: 14px;"; }
