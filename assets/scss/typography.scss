@@ -63,7 +63,7 @@ a:active {
   text-decoration: underline;
 }
 
-.body {
+body {
   @include serif;
   @include cross-browser(font-smoothing, antialiased);
   font-size: 17px;

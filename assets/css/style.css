@@ -697,7 +697,7 @@ a:hover,
 a:active {
   text-decoration: underline; }
 
-.body {
+body {
   font-family: georgia, "times new roman";
   -moz-font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
@@ -858,9 +858,6 @@ img.image {
 .product-purchase {
   text-align: center; }
 
-.footer {
-  height: 400px; }
-
 .wide-photo {
   width: 1080px;
   margin: 0 auto; }
@@ -988,7 +985,8 @@ body {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 0; }
+  left: 0;
+  color: #444; }
 
 .menu-toggle {
   cursor: pointer; }
@@ -1045,3 +1043,19 @@ body {
 .menu-bio-headshot {
   width: 60px;
   border: solid 1px #d9d9d9; }
+
+.footer {
+  font-size: 14px;
+  line-height: 17px;
+  padding-bottom: 50px; }
+
+.footer .body {
+  width: 395px;
+  margin: 0 auto;
+  color: #333;
+  text-align: justify;
+  margin-bottom: 2em; }
+
+.footer .made-in-la {
+  text-align: center;
+  color: #999; }
