@@ -4,6 +4,10 @@
   #{$property}: $value;
 }
 
+@mixin opacity($amount) {
+  @include cross-browser(opacity, $amount);
+}
+
 @mixin border-radius($amount) {
   @include cross-browser(border-radius, $amount);
 }

@@ -804,7 +804,7 @@ img.image {
   width: 600px;
   margin: 60px auto; }
 
-.section-one .body {
+.section-one .body, .section-one .footer-body {
   width: 650px;
   float: left; }
 
@@ -870,7 +870,7 @@ img.image {
   margin: 40px auto;
   color: #898989; }
 
-.section-two .body {
+.section-two .body, .section-two .footer-body {
   width: 480px;
   float: left; }
 
@@ -892,7 +892,7 @@ img.image {
   padding: 0 140px;
   font-style: italic; }
 
-.section-three .body {
+.section-three .body, .section-three .footer-body {
   width: 480px;
   float: right; }
 
@@ -900,7 +900,7 @@ img.image {
   width: 480px;
   float: left; }
 
-.section-four .body {
+.section-four .body, .section-four .footer-body {
   width: 480px;
   float: left; }
 
@@ -918,7 +918,7 @@ img.image {
   background-size: cover;
   position: relative; }
 
-.section-five .body {
+.section-five .body, .section-five .footer-body {
   padding-right: 30px;
   width: 480px;
   float: left; }
@@ -1049,7 +1049,14 @@ body {
   line-height: 17px;
   padding-bottom: 50px; }
 
-.footer .body {
+.footer-logo {
+  -moz-opacity: 0.5;
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+  display: block;
+  margin: -2em auto 2em; }
+
+.footer-body {
   width: 395px;
   margin: 0 auto;
   color: #333;
