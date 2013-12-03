@@ -84,6 +84,7 @@ img.image {
   border: 0;
   width: 600px;
   margin: 60px auto;
+  clear: both;
 }
 
 //---------------------------------------
@@ -409,7 +410,6 @@ body {
 .footer {
   font-size: 14px;
   line-height: 17px;
-  padding-bottom: 50px;
 }
 
 .footer-logo {
@@ -454,8 +454,10 @@ body {
   }
 }
 
-.footer .made-in-la {
-  padding-top: 2em;
+.made-in-la {
+  font-size: 14px;
+  line-height: 17px;
+  padding: 3em 0;
   clear: both;
   text-align: center;
   color: #999;

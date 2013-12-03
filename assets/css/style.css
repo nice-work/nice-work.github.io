@@ -807,7 +807,8 @@ img.image {
   height: 1px;
   border: 0;
   width: 600px;
-  margin: 60px auto; }
+  margin: 60px auto;
+  clear: both; }
 
 .section-one .body, .section-one .footer-body,
 .section-one .footer-newsletter {
@@ -1056,8 +1057,7 @@ body {
 
 .footer {
   font-size: 14px;
-  line-height: 17px;
-  padding-bottom: 50px; }
+  line-height: 17px; }
 
 .footer-logo {
   -moz-opacity: 0.5;
@@ -1094,8 +1094,10 @@ body {
 .footer-newsletter input[type=submit] {
   float: right; }
 
-.footer .made-in-la {
-  padding-top: 2em;
+.made-in-la {
+  font-size: 14px;
+  line-height: 17px;
+  padding: 3em 0;
   clear: both;
   text-align: center;
   color: #999; }
