@@ -4,6 +4,7 @@
 @import 'z-indexes';
 @import 'fonts';
 @import 'colors';
+@import 'forms';
 @import 'helpers';
 @import 'grid';
 @import 'typography';
@@ -417,16 +418,45 @@ body {
   margin: -2em auto 2em;
 }
 
-.footer-body {
+.footer-body,
+.footer-newsletter {
   @extend .body;
   width: grid-width(5);
   margin: 0 auto;
   color: #333;
-  text-align: justify;
   margin-bottom: 2em;
 }
 
+.footer-body {
+  text-align: justify;
+}
+
+.footer-newsletter {
+  h2 {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+  }
+
+  input[type=email] {
+    font-size: 14px;
+    float: left;
+    @include serif;
+    @include border-radius(8px);
+    border: solid 1px #d9d9d9;
+    width: grid-width(4);
+    margin-bottom: 1em;
+    padding: 8px;
+  }
+
+  input[type=submit] {
+    float: right;
+  }
+}
+
 .footer .made-in-la {
+  padding-top: 2em;
+  clear: both;
   text-align: center;
   color: #999;
 }

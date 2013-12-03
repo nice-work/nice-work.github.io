@@ -736,6 +736,11 @@ a.button {
   a.button:hover {
     background-color: black; }
 
+.button-small {
+  font-size: 12px;
+  line-height: 16px;
+  padding: 8px 12px; }
+
 body {
   font-family: georgia, "times new roman"; }
 
@@ -804,7 +809,8 @@ img.image {
   width: 600px;
   margin: 60px auto; }
 
-.section-one .body, .section-one .footer-body {
+.section-one .body, .section-one .footer-body,
+.section-one .footer-newsletter {
   width: 650px;
   float: left; }
 
@@ -870,7 +876,8 @@ img.image {
   margin: 40px auto;
   color: #898989; }
 
-.section-two .body, .section-two .footer-body {
+.section-two .body, .section-two .footer-body,
+.section-two .footer-newsletter {
   width: 480px;
   float: left; }
 
@@ -892,7 +899,8 @@ img.image {
   padding: 0 140px;
   font-style: italic; }
 
-.section-three .body, .section-three .footer-body {
+.section-three .body, .section-three .footer-body,
+.section-three .footer-newsletter {
   width: 480px;
   float: right; }
 
@@ -900,7 +908,8 @@ img.image {
   width: 480px;
   float: left; }
 
-.section-four .body, .section-four .footer-body {
+.section-four .body, .section-four .footer-body,
+.section-four .footer-newsletter {
   width: 480px;
   float: left; }
 
@@ -918,7 +927,8 @@ img.image {
   background-size: cover;
   position: relative; }
 
-.section-five .body, .section-five .footer-body {
+.section-five .body, .section-five .footer-body,
+.section-five .footer-newsletter {
   padding-right: 30px;
   width: 480px;
   float: left; }
@@ -1056,13 +1066,36 @@ body {
   display: block;
   margin: -2em auto 2em; }
 
-.footer-body {
+.footer-body,
+.footer-newsletter {
   width: 395px;
   margin: 0 auto;
   color: #333;
-  text-align: justify;
   margin-bottom: 2em; }
 
+.footer-body {
+  text-align: justify; }
+
+.footer-newsletter h2 {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px; }
+.footer-newsletter input[type=email] {
+  font-size: 14px;
+  float: left;
+  font-family: georgia, "times new roman";
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  border: solid 1px #d9d9d9;
+  width: 310px;
+  margin-bottom: 1em;
+  padding: 8px; }
+.footer-newsletter input[type=submit] {
+  float: right; }
+
 .footer .made-in-la {
+  padding-top: 2em;
+  clear: both;
   text-align: center;
   color: #999; }
