@@ -1055,6 +1055,28 @@ body {
   width: 60px;
   border: solid 1px #d9d9d9; }
 
+.menu-newsletter {
+  position: absolute;
+  bottom: 20px;
+  text-align: center; }
+  .menu-newsletter h2 {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: bold; }
+  .menu-newsletter input[type=email] {
+    font-size: 12px;
+    line-height: 14px;
+    font-family: georgia, "times new roman";
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    border: solid 1px #d9d9d9;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 5px; }
+  .menu-newsletter input[type=submit] {
+    display: none; }
+
 .footer {
   font-size: 14px;
   line-height: 17px; }
