@@ -3,7 +3,7 @@ Syntax error: Undefined mixin 'cross-browser'.
         on line 14 of assets/scss/typography.scss, in `cross-browser'
         from line 14 of assets/scss/typography.scss
 
-9: @mixin cover {
+9: @mixin cover-fonts {
 10:   font-family: helvetica, arial;
 11: }
 12: 
@@ -61,4 +61,4 @@ assets/scss/typography.scss:14
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'cross-browser'.\A         on line 14 of assets/scss/typography.scss, in `cross-browser'\A         from line 14 of assets/scss/typography.scss\A \A 9: @mixin cover {\A 10:   font-family: helvetica, arial;\A 11: }\A 12: \A 13: * {\A 14:   @include cross-browser(box-sizing, border-box);\A 15: }\A 16: \A 17: p {\A 18:   margin-bottom: 1em;\A 19: "; }
+  content: "Syntax error: Undefined mixin 'cross-browser'.\A         on line 14 of assets/scss/typography.scss, in `cross-browser'\A         from line 14 of assets/scss/typography.scss\A \A 9: @mixin cover-fonts {\A 10:   font-family: helvetica, arial;\A 11: }\A 12: \A 13: * {\A 14:   @include cross-browser(box-sizing, border-box);\A 15: }\A 16: \A 17: p {\A 18:   margin-bottom: 1em;\A 19: "; }
