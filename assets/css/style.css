@@ -66,7 +66,7 @@ table {
 html:hover [class^="ss-"] {
   -ms-zoom: 1; }
 
-.ss-icon, .cover-play-video-icon, .video-close-button, .ss-icon.ss-standard, .ss-standard.cover-play-video-icon, .ss-standard.video-close-button,
+.ss-icon, .buy-overlay-change-image.next, .buy-overlay-change-image.previous, .cover-play-video-icon, .close-overlay, .ss-icon.ss-standard, .ss-standard.buy-overlay-change-image.next, .ss-standard.buy-overlay-change-image.previous, .ss-standard.cover-play-video-icon, .ss-standard.close-overlay,
 [class^="ss-"]:before, [class*=" ss-"]:before,
 [class^="ss-"].ss-standard:before, [class*=" ss-"].ss-standard:before,
 [class^="ss-"].right:after, [class*=" ss-"].right:after,
@@ -507,7 +507,7 @@ html:hover [class^="ss-"] {
 .ss-check:before, .ss-check.right:after {
   content: '✓'; }
 
-.ss-delete:before, .video-close-button:before, .ss-delete.right:after, .right.video-close-button:after {
+.ss-delete:before, .close-overlay:before, .ss-delete.right:after, .right.close-overlay:after {
   content: '␡'; }
 
 .ss-settings:before, .ss-settings.right:after {
@@ -561,7 +561,7 @@ html:hover [class^="ss-"] {
 .ss-upright:before, .ss-upright.right:after {
   content: '⬈'; }
 
-.ss-right:before, .ss-right.right:after {
+.ss-right:before, .buy-overlay-change-image.next:before, .ss-right.right:after, .right.buy-overlay-change-image.next:after {
   content: '➡'; }
 
 .ss-downright:before, .ss-downright.right:after {
@@ -573,7 +573,7 @@ html:hover [class^="ss-"] {
 .ss-downleft:before, .ss-downleft.right:after {
   content: '⬋'; }
 
-.ss-left:before, .ss-left.right:after {
+.ss-left:before, .buy-overlay-change-image.previous:before, .ss-left.right:after, .right.buy-overlay-change-image.previous:after {
   content: '⬅'; }
 
 .ss-upleft:before, .ss-upleft.right:after {
@@ -740,6 +740,85 @@ a.button {
   font-size: 12px;
   line-height: 16px;
   padding: 8px 12px; }
+
+.buy-overlay {
+  display: none;
+  -moz-opacity: 0;
+  -webkit-opacity: 0;
+  opacity: 0;
+  -moz-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: black;
+  z-index: 101;
+  top: 0; }
+  .buy-overlay.on {
+    -moz-opacity: 1;
+    -webkit-opacity: 1;
+    opacity: 1;
+    display: block; }
+
+.buy-overlay-image-wrapper {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  bottom: 20px;
+  right: 370px;
+  text-align: center; }
+
+.buy-overlay-change-image {
+  -moz-opacity: 0.7;
+  -webkit-opacity: 0.7;
+  opacity: 0.7;
+  -moz-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  position: absolute;
+  color: white;
+  bottom: 20px;
+  height: 40px;
+  line-height: 40px;
+  width: 40px;
+  cursor: pointer; }
+  .buy-overlay-change-image:hover {
+    -moz-opacity: 1;
+    -webkit-opacity: 1;
+    opacity: 1; }
+  .buy-overlay-change-image.next {
+    right: 120px; }
+  .buy-overlay-change-image.previous {
+    left: 120px; }
+
+.open-buy-overlay {
+  cursor: pointer; }
+
+.buy-overlay-image {
+  max-width: 100%;
+  max-height: 100%;
+  line-height: 100%; }
+
+.buy-overlay-details {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  bottom: 20px;
+  width: 330px;
+  color: #f8f8f8;
+  padding-top: 50px; }
+
+.buy-overlay .product-title {
+  font-size: 26px;
+  line-height: 30px;
+  padding: 20px; }
+  .buy-overlay .product-title > div {
+    font-size: 20px;
+    line-height: 26px; }
+.buy-overlay .product-features {
+  font-size: 16px;
+  line-height: 18px; }
 
 body {
   font-family: georgia, "times new roman"; }
@@ -967,7 +1046,7 @@ img.image {
   bottom: 4%;
   right: 4%; }
 
-.video-close-button {
+.close-overlay {
   -moz-transition: opacity 0.5s ease-in-out;
   -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
@@ -975,9 +1054,10 @@ img.image {
   color: white;
   position: absolute;
   cursor: pointer;
-  right: 10px;
-  top: 10px; }
-  .video-close-button:hover {
+  padding: 5px;
+  right: 5px;
+  top: 5px; }
+  .close-overlay:hover {
     opacity: 1; }
 
 body {

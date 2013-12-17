@@ -21,22 +21,39 @@
 <script src="https://checkout.stripe.com/checkout.js"></script>
 <script>
   var handler = StripeCheckout.configure({
-    key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
+    key: 'pk_test_HEBx3HkHc4HyQiMrmOWMqiar',
     image: '/assets/images/issue-1/product-tiny.jpg',
     token: function(token, args) {
       // Use the token to create the charge with a server-side script.
-      alert('success!', token, args);
+      console.log('success!', token, args);
+
+      $.ajax({
+        url: 'http://localhost:3000/payments',
+        method: 'POST',
+        crossDomain: true,
+        data: {
+          token: token,
+          address: args
+        },
+        success: function(response) {
+          console.log('success', response);
+        },
+        error: function(response) {
+          console.log('error', response);
+        }
+      });
     }
   });
 
-  $('.buy-button').on('click', function(e) {
-    // Open Checkout with further options
-    handler.open({
-      name: 'The Blackacre Wallet ($198)',
-      description: 'Nice Work Limited Edition',
-      amount: 19800,
-      shippingAddress: true
-    });
-    e.preventDefault();
-  });
+  // $(function() {
+  //   $('.buy-button').on('click', function(e) {
+  //     handler.open({
+  //       name: 'The Blackacre Wallet ($198)',
+  //       description: 'Nice Work Limited Edition',
+  //       amount: 19800,
+  //       shippingAddress: true
+  //     });
+  //     e.preventDefault();
+  //   });
+  // })
 </script>
