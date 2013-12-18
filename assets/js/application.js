@@ -26,7 +26,7 @@ $(function() {
 
   function startVideo() {
     $('.video-overlay').addClass('on');
-    $('.video-embed').attr('src', 'http://player.vimeo.com/video/70818122?autoplay=1');
+    $('.video-embed').attr('src', 'http://player.vimeo.com/video/82208796?autoplay=1');
   }
 
   function stopVideo() {
