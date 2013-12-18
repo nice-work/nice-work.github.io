@@ -1,0 +1,89 @@
+.buy-overlay {
+  display: none;
+  @include opacity(0);
+  @include transition(opacity 0.5s);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: black;
+  z-index: $z-top + 1;
+  top: 0;
+
+  &.on {
+    @include opacity(1);
+    display: block;
+  }
+}
+
+.buy-overlay-image-wrapper {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  bottom: 20px;
+  right: 370px;
+  text-align: center;
+}
+
+.buy-overlay-change-image {
+  @include opacity(0.7);
+  @include transition(opacity 0.5s);
+  position: absolute;
+  color: white  ;
+  bottom: 20px;
+  height: 40px;
+  line-height: 40px;
+  width: 40px;
+  cursor: pointer;
+
+  &:hover {
+    @include opacity(1);
+  }
+
+  &.next {
+    @include icon(ss-right);
+    right: 120px;
+  }
+
+  &.previous {
+    @include icon(ss-left);
+    left: 120px;
+  }
+}
+
+.open-buy-overlay {
+  cursor: pointer;
+}
+
+.buy-overlay-image {
+  max-width: 100%;
+  max-height: 100%;
+  line-height: 100%;
+}
+
+.buy-overlay-details {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  bottom: 20px;
+  width: 330px;
+  color: #f8f8f8;
+  padding-top: 50px;
+}
+
+.buy-overlay {
+  .product-title {
+    font-size: 26px;
+    line-height: 30px;
+    padding: 20px;
+
+    > div {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+
+  .product-features {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
