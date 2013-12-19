@@ -66,7 +66,7 @@ table {
 html:hover [class^="ss-"] {
   -ms-zoom: 1; }
 
-.ss-icon, .buy-overlay-change-image.next, .buy-overlay-change-image.previous, .cover-play-video-icon, .close-overlay, .ss-icon.ss-standard, .ss-standard.buy-overlay-change-image.next, .ss-standard.buy-overlay-change-image.previous, .ss-standard.cover-play-video-icon, .ss-standard.close-overlay,
+.ss-icon, .buy-overlay-details-overlay-change-image.next, .buy-overlay-change-image.previous, .cover-play-video-icon, .close-overlay, .ss-icon.ss-standard, .ss-standard.buy-overlay-change-image.next, .ss-standard.buy-overlay-change-image.previous, .ss-standard.cover-play-video-icon, .ss-standard.close-overlay,
 [class^="ss-"]:before, [class*=" ss-"]:before,
 [class^="ss-"].ss-standard:before, [class*=" ss-"].ss-standard:before,
 [class^="ss-"].right:after, [class*=" ss-"].right:after,
@@ -819,7 +819,13 @@ a.button {
 .buy-overlay .product-features {
   font-size: 16px;
   line-height: 18px; }
-
+.buy-overlay .purchase-title {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 20px; }
+.buy-overlay .purchase-details {
+  font-size: 16px;
+  line-height: 18px; }
 body {
   font-family: georgia, "times new roman"; }
 
