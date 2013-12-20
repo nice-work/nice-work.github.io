@@ -821,7 +821,7 @@ a.button {
   line-height: 18px; }
 .buy-overlay .purchase-price {
   font-size: 24px;
-  padding: 20px;
+  text-align: center;
   line-height: 20px; }
 .buy-overlay .purchase-title {
   font-size: 20px;
